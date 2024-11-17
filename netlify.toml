@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "public"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+
+[functions]
+  directory = "functions"
+
+[context.production.environment]
+  API_URL = "/.netlify/functions/api"

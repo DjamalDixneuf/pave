@@ -1,0 +1,22 @@
+{
+  "name": "jekle-ap",
+  "version": "1.0.0",
+  "main": "admin-dashboard.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "json-server --watch db.json --port 3000",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv-webpack": "^8.0.1",
+    "express": "^4.21.1",
+    "json-server": "^0.17.4",
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
